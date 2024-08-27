@@ -1,8 +1,12 @@
+import { useControls } from "leva";
+
 export default function Core() {
+  const { wireframe } = useControls({ wireframe: true });
+
   return (
     <mesh>
-      <torusKnotGeometry />
-      <meshNormalMaterial />
+      <torusGeometry />
+      <meshNormalMaterial wireframe={wireframe} />
     </mesh>
   );
 }
