@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <Canvas>
       <Perf position="top-left" />
-      <OrbitControls enablePan={false} />
+      <OrbitControls enablePan={false} makeDefault />
       <Core />
     </Canvas>
   );
